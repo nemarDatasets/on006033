@@ -1,43 +1,100 @@
 {
   "version": "2.0",
-  "dataset_id": "on006033",
-  "source": "openneuro",
-  "source_id": "ds006033",
+  "pipeline_stage": "enriched",
   "title": "Synchronous EEG and fMRI dataset on inner speech",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Foteini Simistira Liwicki": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006033.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006033",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006033",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "anat",
-    "eeg",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "func"
   ],
   "funding_references": [
     {
-      "funder_name": "Kompetensutveckling till professor, Lulea University of Technology, Sweden [LTU-154-2023]"
+      "funder_name": "Luleå University of Technology",
+      "award_number": "LTU-154-2023",
+      "award_title": "Kompetensutveckling till professor"
     },
     {
-      "funder_name": "Labbfonden Medel för infrastruktur vid Luleå tekniska universitet, 2023 [LTU-4908-2022]"
+      "funder_name": "Luleå University of Technology",
+      "award_number": "LTU-4908-2022",
+      "award_title": "Labbfonden Medel för infrastruktur"
     },
     {
-      "funder_name": "Kempe Foundation, Sweden [JCSMK23-0102]"
+      "funder_name": "Kempe Foundation",
+      "award_number": "JCSMK23-0102"
     }
   ],
-  "acknowledgements": "We thank the participants and research staff involved in data collection."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "func",
+    "eeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".nii",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises simultaneous EEG-fMRI recordings from 3 subjects across 2 sessions during inner speech tasks. Data were acquired using a 3T MRI scanner and 64-channel BrainProducts EEG system with EEG sampling at 5000 Hz and fMRI TR of 2s. The dataset includes EEG data with pulse artifact removal applied using BrainVision Analyzer software and is organized in BIDS format to facilitate multimodal neuroimaging analysis of inner speech mechanisms.",
+  "methods_description": "EEG data were acquired at 5000 Hz using a 64-channel BrainProducts system synchronized with 3T fMRI (TR=2s). Pulse artifact removal was applied using BrainVision Analyzer software. No further data transformations were applied to maintain BIDS 'raw' compliance. Experimental protocol consisted of trials with 2s fixation, 2s stimulus display, and 12s rest periods. Eight words were presented in random order, each repeated 40 times.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "inner speech"
+    },
+    {
+      "term": "covert speech"
+    },
+    {
+      "term": "silent speech"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "pulse artifact removal"
+    },
+    {
+      "term": "artifact correction"
+    },
+    {
+      "term": "inner speech task"
+    }
+  ],
+  "source_hash": "01afdd2d7cf9bf4c27139202795c7ed50cb2b111d2b8baf388590db05dce4ad5"
 }
