@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Synchronous EEG and fMRI dataset on inner speech",
-  "description": "This dataset comprises simultaneous EEG-fMRI recordings from 3 subjects across 2 sessions during inner speech tasks. Data were acquired using a 3T MRI scanner and 64-channel BrainProducts EEG system with EEG sampling at 5000 Hz and fMRI TR of 2s. The dataset includes preprocessed EEG data with pulse artifact removal and is organized in BIDS format to facilitate multimodal neuroimaging analysis of inner speech mechanisms. No anatomical MRI data are included in this dataset.",
-  "methods_description": "EEG data were acquired using a 64-channel BrainProducts system at 5000 Hz sampling rate. fMRI data were acquired on a 3T MRI scanner with TR=2s. EEG preprocessing included pulse artifact removal using BrainVision Analyzer software. The dataset is designated as 'raw' type in BIDS, with preprocessing limited to pulse artifact removal to maintain compliance with raw data standards. Experimental protocol consisted of trials with 2s fixation, 2s stimulus display, and 12s rest periods. Eight words were presented in random order, each repeated 40 times per session.",
+  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 3 participants performing an inner speech task across 2 sessions each. Participants covertly produced 8 words presented in randomized order, each repeated 40 times, while EEG (64-channel, 5000 Hz) and fMRI (TR=2s) data were acquired concurrently. The dataset is intended to support research into the neural correlates of inner speech using multimodal neuroimaging.",
+  "methods_description": "Simultaneous EEG-fMRI recordings were collected using a 3T MRI scanner and a 64-channel BrainProducts EEG system sampled at 5000 Hz. Each trial consisted of a fixation period (2s), stimulus display (2s), and rest (12s), with 8 words presented in random order and repeated 40 times each. EEG data underwent preprocessing including pulse artifact removal using BrainVision Analyzer software; no further transformations were applied to maintain BIDS-raw compliance.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,16 +23,14 @@
       "term": "multimodal neuroimaging"
     },
     {
-      "term": "simultaneous EEG-fMRI"
+      "term": "Speech, Alaryngeal",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013071"
     },
     {
-      "term": "BrainProducts"
-    },
-    {
-      "term": "pulse artifact removal"
-    },
-    {
-      "term": "BIDS"
+      "term": "Brain Mapping",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
     }
   ],
   "related_identifiers": [
@@ -54,17 +52,17 @@
   ],
   "funding_references": [
     {
-      "funder_name": "Luleå University of Technology",
+      "funder_name": "Lulea University of Technology, Sweden",
       "award_number": "LTU-154-2023",
       "award_title": "Kompetensutveckling till professor"
     },
     {
-      "funder_name": "Luleå University of Technology",
+      "funder_name": "Lulea University of Technology, Sweden",
       "award_number": "LTU-4908-2022",
-      "award_title": "Labbfonden Medel för infrastruktur"
+      "award_title": "Labbfonden Medel för infrastruktur vid Luleå tekniska universitet, 2023"
     },
     {
-      "funder_name": "Kempe Foundation",
+      "funder_name": "Kempe Foundation, Sweden",
       "award_number": "JCSMK23-0102"
     }
   ],
