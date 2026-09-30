@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Synchronous EEG and fMRI dataset on inner speech",
-  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 3 participants performing an inner speech task across 2 sessions each. Participants covertly produced 8 words presented in randomized order, each repeated 40 times, while EEG (64-channel, 5000 Hz) and fMRI (TR=2s) data were acquired concurrently. The dataset is intended to support research into the neural correlates of inner speech using multimodal neuroimaging.",
-  "methods_description": "Simultaneous EEG-fMRI recordings were collected using a 3T MRI scanner and a 64-channel BrainProducts EEG system sampled at 5000 Hz. Each trial consisted of a fixation period (2s), stimulus display (2s), and rest (12s), with 8 words presented in random order and repeated 40 times each. EEG data underwent preprocessing including pulse artifact removal using BrainVision Analyzer software; no further transformations were applied to maintain BIDS-raw compliance.",
+  "description": "This dataset contains simultaneous EEG and fMRI recordings from participants performing an inner speech task, in which eight words were presented in random order and repeated across trials. Data were acquired with a 3T MRI scanner and a 64-channel BrainProducts EEG system in three subjects across two sessions each. EEG data include pulse artifact removal and are organized in BIDS format.",
+  "methods_description": "Simultaneous EEG-fMRI was acquired using a 3T MRI scanner and a 64-channel BrainProducts EEG system (5000 Hz sampling), with fMRI TR of 2 s. Each trial comprised a 2 s fixation, 2 s word stimulus display, and 12 s rest; 8 words were each repeated 40 times in random order. Pulse artifacts were removed with BrainVision Analyzer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,20 +17,20 @@
       "term": "fMRI"
     },
     {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
       "term": "inner speech"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Speech, Alaryngeal",
+      "term": "Magnetic Resonance Imaging",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013071"
-    },
-    {
-      "term": "Brain Mapping",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -52,17 +52,17 @@
   ],
   "funding_references": [
     {
-      "funder_name": "Lulea University of Technology, Sweden",
+      "funder_name": "Luleå University of Technology",
       "award_number": "LTU-154-2023",
       "award_title": "Kompetensutveckling till professor"
     },
     {
-      "funder_name": "Lulea University of Technology, Sweden",
+      "funder_name": "Luleå University of Technology",
       "award_number": "LTU-4908-2022",
-      "award_title": "Labbfonden Medel för infrastruktur vid Luleå tekniska universitet, 2023"
+      "award_title": "Labbfonden Medel för infrastruktur vid Luleå tekniska universitet"
     },
     {
-      "funder_name": "Kempe Foundation, Sweden",
+      "funder_name": "Kempe Foundation",
       "award_number": "JCSMK23-0102"
     }
   ],
@@ -74,7 +74,7 @@
     "eeg"
   ],
   "sizes": [
-    "15.9 GB (25 files)"
+    "14.79 GB (25 files)"
   ],
   "formats": [
     ".eeg",
